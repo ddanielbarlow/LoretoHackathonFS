@@ -2,17 +2,17 @@ require 'net/https'
 require 'json'
 
 # Forecast API Key from https://developer.forecast.io
-forecast_api_key = ""
+forecast_api_key = "e9ab93e874751685b2558b2e11ad900c"
 
 # Latitude, Longitude for location
-forecast_location_lat = "45.429522"
-forecast_location_long = "-75.689613"
+forecast_location_lat = "53.483959"
+forecast_location_long = "-2.244644"
 
 # Unit Format
 # "us" - U.S. Imperial
 # "si" - International System of Units
 # "uk" - SI w. windSpeed in mph
-forecast_units = "si"
+forecast_units = “uk”
   
 SCHEDULER.every '5m', :first_in => 0 do |job|
   http = Net::HTTP.new("api.forecast.io", 443)
