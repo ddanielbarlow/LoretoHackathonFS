@@ -2,7 +2,7 @@
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="Welcome" data-view="Text" data-title="Welcome" data-text="This is your school dashboard." data-moreinfo="This was made using dashing"></div>
+      <div data-id="Welcome" data-view="Text" data-title="Welcome" data-text="This is your school dashboard." data-moreinfo="Protip: Black Holes Don't exist!"></div>
     </li>
 
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -10,16 +10,19 @@
 	</li>
 
 	<li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-		<div data-view="Countdown" data-title="School Day Ends!" data-end="05-Jul-2017 16:00:00"></div>
+		<div data-view="Countdown" data-title="School Ends!" data-end="05-Jul-2017 16:00:00"></div>
 	</li>
 	
 	<li data-row="1" data-col="1" data-sizex="2" data-sizey="3">
   		<div data-id="trafficmap" data-view="Trafficmap" data-title="School Traffic Map" data-lat="30.329548" data-long="-97.756257" data-zoom="14" ></div>
 	</li>
 
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-		<div data-id="klimato" data-view="Klimato"></div>
-	</li>
+     <li data-row="1" data-col="1" data-sizex="3" data-sizey="2">
+       <div data-id="picture" data-view="BigImage" data-image="http://www.failsworthlg.co.uk/images/mapgf.jpg"
+         style="background-color:transparent;"
+         data-max="true"
+       </div>
+     </li>
 	
 	</ul>
   <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
