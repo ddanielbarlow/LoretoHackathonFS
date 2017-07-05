@@ -1,3 +1,8 @@
+<script type='text/javascript'>
+ $(function() {
+   Dashing.gridsterLayout('[{"col":2,"row":2,"size_x":2,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":1,"size_y":2},{"col":2,"row":1,"size_x":1,"size_y":1}]')
+ });
+ </script>
 <% content_for :title do %>Luke's Dashboard<% end %>
 <div class="gridster">
   <ul>
@@ -13,8 +18,6 @@
       <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
     </li>
 
-
-	
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
 		<div data-view="Countdown" data-title="The End of the School Day" data-end="05-Jul-2017 16:00:00"></div>
 	</li>
