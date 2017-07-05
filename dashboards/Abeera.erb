@@ -1,26 +1,21 @@
-<script type='text/javascript'>
- $(function() {
-   Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":2,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":2,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":1,"size_x":null,"size_y":1}]')
- });
- </script>
-<% content_for :title do %>My super sweet dashboard<% end %>
+<% content_for :title do %>Student Dashboard<% end %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
+      <div data-id="welcome" data-view="Text" data-title="Hello" data-text=“Welcome Students.” data-moreinfo=“This is your dashboard. It has all the information you need”></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-    <div data-view="Myclock"></div>
+        <div data-view="Myclock"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-    <div data-id="convergence" data-view="Graph" data-title=“Notices” style="background-color:#ff9618"></div>
+        <div data-id="convergence" data-view="Graph" data-title=“Notices” style="background-color:#ff9618"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">                           
 	<div data-view="Countdown" data-title="3 o'clock today" data-end="07-Jul-2017 15:00:00"></div>
     </li>
     <li data-row="1" data-col="1" data-sizex=“1” data-sizey="1">
-    <div data-id="forecast" data-view="Forecast" data-title="Weather Forecast" ></div>
+        <div data-id="forecast" data-view="Forecast" data-title="Weather Forecast" ></div>
     </li>
-	</ul>
+  </ul>
     <center><div style="font-size: 12px">Try this: curl -d '{ "auth_token": "YOUR_AUTH_TOKEN", "text": "Hey, Look what I can do!" }' \http://<%=request.host%>:<%=request.port%>/widgets/welcome</div></center>
     </div>
