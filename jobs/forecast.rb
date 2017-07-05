@@ -15,7 +15,7 @@ forecast_location_long = "-2.244644"
 forecast_units = "UK"
   
 SCHEDULER.every '5m', :first_in => 0 do |job|
-  http = Net::HTTP.new("api.forecast.io", 443)
+  http = Net::HTTP.new("api.darksky.net”, 443)
   http.use_ssl = true
   http.verify_mode = OpenSSL::SSL::VERIFY_PEER
   response = http.request(Net::HTTP::Get.new("/forecast/#{forecast_api_key}/#{forecast_location_lat},#{forecast_location_long}?units=#{forecast_units}"))
